@@ -1,0 +1,48 @@
+body{
+	margin:0;
+	background: #FF4028;
+
+}
+.logo
+{   left:50px;
+	font-family: 'bungee inline', cursive;
+}
+nav ul li
+{
+
+ display: inline-block;
+ margin-left:40px;
+ padding-top:10px;
+ position:relative;
+ font-family: 'bungee inline', cursive;
+}
+.h5
+{    font-size:16px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+nav a	
+{  
+	text-decoration: none;
+	font-family: 'Saira Semi Condensed', sans-serif;	
+}
+nav a:hover
+{
+color:#444;
+}
+nav a::before
+{
+	content:'';
+	display:block;
+	height:5px;
+	width:0%;
+	left:1px;
+	background:#2874A6;
+	position:absolute;
+	bottom:0;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before
+{
+  width:100%;
+
+}
