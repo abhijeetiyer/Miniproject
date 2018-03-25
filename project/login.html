@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wdth=device-width, initial-scale = 1.0">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<script src="js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Saira+Semi+Condensed" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title></title>
+</head>
+<body>
+<header>
+<div class="navbar-fixed">
+  <nav class="grey lighten-3  z-depth-5">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo logo blue-text"><img src="pwd.png" height="40px">PWD</a>
+        <div class="container">
+          <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+          <li class="active"><a class="blue-text" href="index.html"><i class="material-icons left">home</i>Home</a></li>
+          <li><a class="blue-text" href="about_us.html"><i class="material-icons left">business</i>About Us</a></li>
+          <li><a class="blue-text" href="contact_us.html"><i class="material-icons left">web</i>Contact Us</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li class="blue accent-1"><a class="waves-effect waves-light btn grey darken-4 center" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
+     
+          </ul>
+        </div>
+    </div>
+  </nav>
+</div>
+  <ul class="side-nav a grey lighten-3" id="mobile-demo">
+        <li class="active"><a href="index.html" class="blue-text"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="about_us.html" class="blue-text"><i class="material-icons left">business</i>About Us</a></li>
+        <li><a href="contact_us.html" class="blue-text"><i class="material-icons left">contact_phone</i>Contact Us</a></li>
+        <li><a class="waves-effect waves-light btn grey darken-4 center" href="login.html"><i class="material-icons left grey darken-1">person</i>Log In</a></li>
+  </ul>
+
+  <script type="text/javascript">
+      $( document ).ready(function() {
+      $(".button-collapse").sideNav();
+    });
+  </script>
+</header>
+<br>
+<br><br><br>
+<div class="container">
+	<div class="card-panel z-depth-5  grey darken-1">
+	<div class="row">
+    <div class="col s12">
+      <ul class="tabs grey darken-1">
+        <li class="tab col s3"><a href="#Admin" class="white-text active">Admin_Login</a></li>
+        <li class="tab col s3"><a class="white-text" href="#Emp">Emp_Login</a></li>
+      </ul><br>
+      <hr>
+      <br>
+    </div>
+    <div id="Admin" class="col s12"><div class="row">
+	<div class="card-panel offset-s5 col s5 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Admin_id</label>
+        </div>
+	</div>
+	<div class="card-panel offset-s1 offset-m1 offset-l1 col s5 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">fingerprint</i>
+          <input id="icon_prefix" type="password" class="validate">
+          <label for="icon_prefix">password</label>
+        </div>
+	</div>
+	</div>
+	<a class="waves-effect waves-light btn">Login</a>
+</div>
+    <div id="Emp" class="col s12"><div class="row">
+	<div class="card-panel offset-s5 col s5 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Emp_id</label>
+        </div>
+	</div>
+	<div class="card-panel offset-s1 offset-m1 offset-l1 col s5 m5 l5">
+		<div class="input-field col s12 m12 l12">
+          <i class="material-icons prefix">fingerprint</i>
+          <input id="icon_prefix" type="password" class="validate">
+          <label for="icon_prefix">password</label>
+        </div>
+	</div>
+	</div>
+	<a class="waves-effect waves-light btn">Login</a></div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+

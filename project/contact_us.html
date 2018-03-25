@@ -2,23 +2,30 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Saira+Semi+Condensed" rel="stylesheet">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <style type="text/css">
+   #map
+    {
+      height:400px;
+      width:100%;
+    }
+ </style>
 </head>
 <body>
 <header>
 <div class="navbar-fixed">
   <nav class="grey lighten-3  z-depth-5">
     <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo logo blue-text"><img src="home.png" height="40px">PWD</a>
+        <a href="index.html" class="brand-logo logo blue-text"><img src="pwd.png" height="40px">PWD</a>
         <div class="container">
           <a href="#" data-activates="mobile-demo" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down">
@@ -27,8 +34,7 @@
           <li class="active"><a class="blue-text" href="contact_us.html"><i class="material-icons left">web</i>Contact Us</a></li>
           </ul>
           <ul class="right hide-on-med-and-down">
-            <li><a class="waves-effect waves-light btn grey darken-4 center"><i class="material-icons left">person</i>Log In</a></li>
-           <li><a class="waves-effect waves-light btn grey darken-4 center"><i class="material-icons left">work</i>Admin</a></li>
+            <li><a class="waves-effect waves-light btn grey darken-4 center" href="login.html"><i class="material-icons left">person</i>Log In</a></li>
           </ul>
         </div>
     </div>
@@ -38,15 +44,131 @@
         <li><a href="index.html" class="blue-text"><i class="material-icons left">home</i>Home</a></li>
         <li><a href="about_us.html" class="blue-text"><i class="material-icons left">business</i>About Us</a></li>
         <li class="active"><a href="contact_us.html" class="blue-text"><i class="material-icons left">contact_phone</i>Contact Us</a></li>
-        <li><a class="waves-effect waves-light btn grey darken-4 center"><i class="material-icons left grey darken-1">person</i>Log In</a></li>
-        <li><a class="waves-effect waves-light btn grey darken-4 center"><i class="material-icons left grey darken-1">work</i>Admin</a></li>
+        <li><a class="waves-effect waves-light btn grey darken-4 center" href="login.html"><i class="material-icons left grey darken-1">person</i>Log In</a></li>
   </ul>
 
-  <script type="text/javascript">
-      $( document ).ready(function() {
-      $(".button-collapse").sideNav();
-    });
-  </script>
+  
 </header>
+<h1 id="fireHeading">Details</h1>
+<div class="container text-align center">
+  <div class="col s12 m6 l6">
+    <div class="card horizontal  grey darken-3">
+      <div class="card-stacked">
+        <div class="card-content">
+          <div class="row">
+           <div class="col s6 m6 l6">
+             <h3 class="white-text text-align center"><b>LANDMARK</b></h3>
+             <div class="row text-align center">
+             <div class="white-text col s12 m6 l6">CPWD <br>Goverment office <br>
+             15th floor,old Cgo Annexe, G.B.Road,thane(west), mumbai
+             maharashtra 400615  
+             </div>
+             <hr>
+             <div class="col s12 m6 l6 white-text"><i class="material-icons left">phone</i>8291685462</div>
+             <div class="col s12 m6 l6 white-text "><i class="material-icons left">phone</i>9769213895</div>
+             <div class="col s12 m6 l6 white-text"><i class="material-icons left">phone</i>8082606883</div>
+             </div>
+           </div>
+           <div class="col s12 m6 l6">
+             <i class="large material-icons white-text">location_on</i>
+             </div>
+           </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row col s12 m12 l12">
+        <div class="card-panel col s5 m5 l5  grey darken-3">
+        <label class="white-text font">Name:</label><input type="text" name="name" placeholder="name" class="input-field black-text font">
+        </div>
+        <div class="card-panel offset-s1 offset-m1 offset-l1  col s5 m6 l6  grey darken-3">
+         <label class="white-text font">Site:</label><input type="text" name="site" placeholder="site" class="input-field black-text font"> 
+        </div>
+       
+      </div>
+
+      <div class="row col s6 m6 l6">
+        <div class="card-panel col s5 m5 l5  grey darken-3">
+        <label class=" white-text font">Email_id:</label><input type="text" name="email_id" placeholder="email_id" class="input-field black-text font">
+        </div>
+        <div class="card-panel offset-s1 offset-m1 offset-l1  col s5 m6 l6  grey darken-3">
+         <label class="white-text font">phone:</label><input type="text" name="phone" placeholder="phone" class="input-field black-text font"> 
+        </div>
+      </div>
+      <div class="row col s12 m12 l12">
+        <div class="card-panel  grey darken-3">
+         <label class="white-text font">Message:</label> <i class="material-icons prefix left white-text">mode_edit</i><input type="text" placeholder="message" name="message" id="message" class="materialize-textarea black-text font" data-length="1000">
+        </div>
+        </div>
+        <button id="submit" onclick="submitClick()" class="waves-effect waves-light btn">Submit</button>
+      </div>
+        <hr>
+      </div>
+<div id="map"></div>
+
+
+      <footer class="page-footer light-blue darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Content</h5>
+                <p class="grey-text text-lighten-4">This is a simple miniproject as to understand how a website can be built using different frameworks and tools
+                the content of the website is taken from different websites.Links for more details of the website is provided above</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+         <script>
+      function initMap() {
+        var myLatLng = {lat: 19.2183, lng: 72.9781};
+        var myLatLng1 = {lat: 19.0473,lng: 73.0699};
+        var myLatLng2 = {lat: 19.217907,lng: 72.847084}
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 10
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng1,
+          title: 'Hello World!'
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng2,
+          title: 'Hello World!'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwOgvK-M6ZOEitCoVb58zObSzcmvrEfdY&callback=initMap"
+        async defer></script> 
+
 </body>
 </html>
